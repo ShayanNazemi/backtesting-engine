@@ -1,0 +1,10 @@
+{
+  "name": "Python Development",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "settings": {
+    "python.pythonPath": "/app/venv/bin/python" // Update if using a venv
+  },
+  "extensions": ["ms-python.python"]
+}
