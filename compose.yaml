@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  backtesting-engine:
+    image: backtesting-engine
+    build: .
+    container_name: backtesting-engine-container
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
